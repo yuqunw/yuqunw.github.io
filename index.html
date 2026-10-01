@@ -27,10 +27,10 @@
                 <name>Yuqun Wu</name>
               </p>
               <p>
-                I am a third year Ph.D. student in Computer Science at the University of Illinois at Urbana-Champaign, advised by <a href="http://dhoiem.cs.illinois.edu">Prof. Derek Hoiem</a> and <a href="https://shenlong.web.illinois.edu">Prof. Shenlong Wang</a>. 
+                I am a final-year Ph.D. student in Computer Science at the University of Illinois at Urbana-Champaign, advised by <a href="http://dhoiem.cs.illinois.edu">Prof. Derek Hoiem</a> and <a href="https://shenlong.web.illinois.edu">Prof. Shenlong Wang</a>. 
               </p>
               <p>
-                I received my MS and BS degrees from UIUC, where I was fortunate to be mentored by <a href="https://jyl.kr/">Dr. Jae Yong Lee</a>. I spent the summer of 2025 at Meta and did a summer intern at UCSD in 2022. 
+                I received my MS and BS degrees from UIUC, where I was fortunate to be mentored by <a href="https://jyl.kr/">Dr. Jae Yong Lee</a>. I have interned at Stability AI (2026) and Meta (2025).
               </p>
               <p style="text-align:center">
                 <a href="mailto:yuqunwu2@illinois.edu">Email</a> &nbsp/&nbsp
@@ -48,7 +48,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                My research interests lie in computer vision, with a current focus on Vision Language Models for spatial understanding and long-context video understanding. I am also broadly interested in scene understanding, neural rendering and geometry reconstruction.
+                My research interests lie in computer vision, with a current focus on physically grounded world models and VLMs for spatial understanding. I am also broadly interested in scene understanding, neural rendering and geometry reconstruction.
             </ul>
               </p>
             </td>
@@ -58,10 +58,55 @@
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/R2R.png" alt="clean-usnob" width="250" height="79">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="data/Render2Reason.pdf"><papertitle>Render to Reason: Novel-View Semantic Prediction Improves Spatial Understanding in VLMs</papertitle></a>
+              <br>
+              <strong>Yuqun Wu</strong>,
+              <a href="https://avaxiao.github.io">Yao Xiao</a>,
+              <a href="https://zouchuhang.github.io">Chuhang Zou</a>,
+              <a href="https://shenlong.web.illinois.edu">Shenlong Wang</a>,
+              and <a href="http://dhoiem.cs.illinois.edu">Derek Hoiem</a>
+              <br>
+              <em>Under Review</em>
+              <br>
+              <a href="data/Render2Reason.pdf">PDF</a>
+              <!-- , Preprint (incoming) -->
+              <!-- , Code (incoming) -->
+              <p> Propose novel-view semantic rendering as an auxiliary training task that helps VLMs integrate geometry features for better spatial reasoning. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/SAM_V.png" alt="clean-usnob" width="250" height="198">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2609.25490"><papertitle>SAM-V: Geometry-Aware Segment Anything for Multi-View Instance Segmentation</papertitle></a>
+              <br>
+              <a href="https://www.linkedin.com/in/jiangshan-gong/?isSelfProfile=false">Jiangshan Gong*</a>,
+              <strong>Yuqun Wu*</strong>,
+              <a href="https://github.com/QiqianFu">Qiqian Fu</a>,
+              <a href="https://avaxiao.github.io">Yao Xiao</a>,
+              <a href="https://zouchuhang.github.io">Chuhang Zou</a>,
+              <a href="https://shenlong.web.illinois.edu">Shenlong Wang</a>,
+              and <a href="http://dhoiem.cs.illinois.edu">Derek Hoiem</a>
+              <br>
+              <em>Under Review</em>
+              <br>
+              <a href="https://arxiv.org/abs/2609.25490">Preprint</a>
+              , <a href="https://github.com/gong208/SAM-V">Code</a>
+              <p> Integrate VGGT and SAM for consistent multi-view instance segmentation, without offline mask matching or explicit 3D reconstruction. </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
               <img src="images/retoken.png" alt="clean-usnob" width="250" height="140">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>ReToken: One Token to Improve Vision-Language Models for Visual Retrieval</papertitle>
+              <a href="https://arxiv.org/abs/2607.28627"><papertitle>ReToken: One Token to Improve Vision-Language Models for Visual Retrieval</papertitle></a>
               <br>
               <a href="https://avaxiao.github.io">Yao Xiao</a>,
               <a href="https://rxtan2.github.io/">Reuben Tan</a>,
@@ -70,7 +115,7 @@
               <a href="https://www.microsoft.com/en-us/research/people/jfgao/">Jianfeng Gao</a>,
               and <a href="http://dhoiem.cs.illinois.edu">Derek Hoiem</a>
               <br>
-              <em>Under Review</em>
+              <em>NeurIPS 2026</em>
               <br>
               <a href="https://arxiv.org/abs/2607.28627">Preprint</a>
               , <a href="https://github.com/avaxiao/ReToken">Code</a>
@@ -80,10 +125,12 @@
 
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/SceneDiff.jpg" alt="clean-usnob" width="250" height="100">
+              <video width="250" height="160" autoplay muted loop playsinline poster="images/SceneDiff.jpg">
+                <source src="data/scenediff_2.mp4" type="video/mp4">
+              </video>
             </td>
             <td width="75%" valign="middle">
-              <papertitle>SceneDiff: A Benchmark and Method for Multiview Object Change Detection</papertitle>
+              <a href="https://yuqunw.github.io/SceneDiff/"><papertitle>SceneDiff: A Benchmark and Method for Multiview Object Change Detection</papertitle></a>
               <br>
               <strong>Yuqun Wu</strong>,
               <a href="https://chih-hao-lin.github.io">Chih-hao Lin</a>,
@@ -108,7 +155,7 @@
               <img src="images/text_region.png" alt="clean-usnob" width="250" height="140">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>TextRegion: Text-Aligned Region Tokens from Frozen Image-Text Models</papertitle>
+              <a href="https://arxiv.org/pdf/2505.23769"><papertitle>TextRegion: Text-Aligned Region Tokens from Frozen Image-Text Models</papertitle></a>
               <br>
               <a href="https://avaxiao.github.io">Yao Xiao</a>,
               <a href="https://github.com/QiqianFu">Qiqian Fu</a>,
@@ -130,7 +177,7 @@
               <img src="images/MonoPatchNeRF.png" alt="clean-usnob" width="250" height="150">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>MonoPatchNeRF: Improving Neural Radiance Fields with Patch-based Monocular Guidance</papertitle>
+              <a href="https://yuqunw.github.io/MonoPatchNeRF/"><papertitle>MonoPatchNeRF: Improving Neural Radiance Fields with Patch-based Monocular Guidance</papertitle></a>
               <br>
               <strong>Yuqun Wu*</strong>,
               <a href="https://jyl.kr">Jae Yong Lee*</a>,
@@ -152,7 +199,7 @@
               <img src="images/ppng.png" alt="clean-usnob" width="250" height="150">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>Plenoptic PNG: Real-Time Neural Radiance Fields in 150 KB</papertitle>
+              <a href="https://jyl.kr/ppng/"><papertitle>Plenoptic PNG: Real-Time Neural Radiance Fields in 150 KB</papertitle></a>
               <br>
               <a href="https://jyl.kr">Jae Yong Lee</a>,
               <strong>Yuqun Wu</strong>,
@@ -174,7 +221,7 @@
               <img src="images/dino_sam.png" alt="clean-usnob" width="250" height="100">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>Region-Based Representations Revisited</papertitle>
+              <a href="https://regionreps.web.illinois.edu"><papertitle>Region-Based Representations Revisited</papertitle></a>
               <br>
               <a href="https://michalmsr.web.illinois.edu">Michal Shlapentokh-Rothman*</a>,
               Ansel Blume*,
@@ -202,7 +249,7 @@
               <img src="images/SSPN.png" alt="clean-usnob" width="250" height="140">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>Sparse SPN: Depth Completion from Sparse Keypoints</papertitle>
+              <a href="https://arxiv.org/abs/2212.00987"><papertitle>Sparse SPN: Depth Completion from Sparse Keypoints</papertitle></a>
               <br>
               <strong>Yuqun Wu*</strong>, <a href="https://jyl.kr">Jae Yong Lee*</a>, and <a href="http://dhoiem.cs.illinois.edu">Derek Hoiem</a>
               <br>
@@ -216,7 +263,7 @@
               <img src="images/QFF.png" alt="clean-usnob" width="250" height="70">
             </td>
             <td width="75%" valign="middle">
-              <papertitle>QFF: Quantized Fourier Features for Neural Field Representations</papertitle>
+              <a href="https://arxiv.org/abs/2212.00914"><papertitle>QFF: Quantized Fourier Features for Neural Field Representations</papertitle></a>
               <br>
               <a href="https://jyl.kr">Jae Yong Lee</a>, <strong>Yuqun Wu</strong>, <a href="https://zouchuhang.github.io">Chuhang Zou</a>, <a href="https://shenlong.web.illinois.edu">Shenlong Wang</a>, and <a href="http://dhoiem.cs.illinois.edu">Derek Hoiem</a>
               <br>
@@ -232,8 +279,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Service</heading>
               <br>
-              <p><strong>Teaching Assistant</strong>: <a href="https://courses.engr.illinois.edu/cs445/fa2022/">Computational Photography (Fall 2022)</a>, <a href="https://courses.engr.illinois.edu/cs441/sp2023/">Applied Machine Learning (Spring 2023)</a></p>
-              <p><strong>Reviewer</strong>: CVPR 2025, ECCV 2024, WACV 2025</p>
+              <p><strong>Reviewer</strong>: CVPR, ECCV, 3DV, TMLR, WACV</p>
+              <p><strong>Teaching Assistant</strong>: Applied Machine Learning(<a href="https://courses.engr.illinois.edu/cs441/fa2026/">Fall 2026</a>, <a href="https://courses.engr.illinois.edu/cs441/sp2023/">Spring 2023</a>), Computational Photography(<a href="https://courses.engr.illinois.edu/cs445/fa2022/">Fall 2022</a>)</p>
             </td>
             </tr>
         </tbody></table>
@@ -244,7 +291,7 @@
             <td style="padding:0px">
               <p style="text-align:right;font-size:small;">
 
-              Updated on Sep 5 2025. Thanks <a href="https://jonbarron.info">Jon Barron</a> for his amazing template.
+              Updated on Sep 30 2026. Thanks <a href="https://jonbarron.info">Jon Barron</a> for his amazing template.
               </p>
             </td>
   </tr>
